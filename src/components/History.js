@@ -39,7 +39,6 @@ export default class History extends React.Component {
                     <div key={index} className="history-item">
                       <div className="history-item-formula">{item.formula.join("")}</div>
                       <div className="history-item-result" value={item.result} onClick={this.props.onHistoryItemClicked}>={item.result}</div>
-                      <hr></hr>
                     </div>
                 )
               })
