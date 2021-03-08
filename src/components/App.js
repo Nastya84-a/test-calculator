@@ -223,9 +223,9 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener('keydown', (event) => {
-         if (event.key.match(/[0-9]/)) {
-        this.setState({input: this.state.input + event.key})
+    window.addEventListener('keydown', (valueOf) => {
+         if (valueOf.key.match(/[0-9]/)) {
+        this.setState({input: this.state.input + valueOf.key})
       }
 
   })
